@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import fotoFeedback from "./assets/anonima.jpg";
 import triangulosEsq from "./assets/triangulos.svg";
 import imageForm from "./assets/image 3.png";
-import { Headset, CloudUpload, CloudCog, MessagesSquare, Blocks, Mail,BadgeX, CircleCheck  } from "lucide-react";
+import { Headset, CloudUpload, CloudCog, MessagesSquare, Blocks, Mail, BadgeX, CircleCheck } from "lucide-react";
 import { motion } from 'framer-motion';
 import gif from "./assets/formVideo-arrast.gif";
 
@@ -20,16 +20,15 @@ export default function Home() {
     const selector = document.getElementById("select");
     const iframeForm = document.getElementById("formIframe");
 
-    selector.addEventListener("change", function () {
 
-      
-      
-
-      iframeForm.setAttribute(
-        "src",
-        selector.value
-      );
-    });
+    if (selector && iframeForm) {
+      selector.addEventListener("change", function () {
+        iframeForm.setAttribute(
+          "src",
+          "https://www.spotform.com.br/form/clyfxaycy0002tokzsamlw91t"
+        );
+      });
+    }
   }, []);
 
 
@@ -67,8 +66,8 @@ export default function Home() {
             src={gif}
             alt="gif formulário intuitivo"
             className="rounded-md shadow-lg z-10 w-[100%] "
-              style={{ objectFit: 'cover' }}
-            ></Image>
+            style={{ objectFit: 'cover' }}
+          ></Image>
           {/* Background Yellow Circle */}
           <div className="absolute bg-yellow-300 rounded-full blur-[150px] opacity-1 top-[-50px] left-[-100px] w-[400px] h-[400px] z-0  max-md:hidden"></div>
           {/* Background Blue Circle */}
@@ -87,14 +86,14 @@ export default function Home() {
           <div className="relative w-[60%] h-[300px] flex items-center justify-center max-md:w-full max-md:p-2">
             {/* Video */}
             <Image
-            src={gif}
-            alt="gif formulário intuitivo"
-            
-            className="rounded-md shadow-lg z-10 w-[100%] "
+              src={gif}
+              alt="gif formulário intuitivo"
+
+              className="rounded-md shadow-lg z-10 w-[100%] "
               style={{ objectFit: 'cover' }}
             ></Image>
-          
-             
+
+
             {/* Background Yellow  */}
             <div className="absolute bg-gradient-to-t  from-[#1E0A6D] to-[#4675A0] rounded-md  opacity-1 top-[-30px] left-[-30px] w-[200px] h-[200px] z-0 max-md:hidden"></div>
             {/* Background Blue  */}
@@ -318,118 +317,118 @@ export default function Home() {
       <section className="flex flex-col px-4  min-h-screen  justify-center text-center items-center  gap-8">
         <div className="max-w-[800px]">
           <h2 className={`${outfit.className} font-extrabold text-4xl text-black`}>
-          Veja a diferença do Spotform para ferramentas americanas
+            Veja a diferença do Spotform para ferramentas americanas
           </h2>
           <p className="text-lg text-gray-500">Pare de pagar ferramentas caras
             e começe a utilizar o spotform a melhor ferramenta de formulários com o melhor custo beneficio do mercado</p>
         </div>
 
-      
-          <div className="mx-auto mt-20 flex max-w-screen-lg flex-col  items-center justify-center">
 
-            <div className="my-8 flex flex-col items-center justify-center gap-8 md:flex-row md:items-stretch">
-              <div className="w-full max-w-[18.75rem] rounded-lg border-[0.0938rem] bg-black p-4">
-                <h3 className="text-center text-[2rem] font-semibold uppercase leading-tight text-green-500">
-                  SpotForm
-                </h3>
+        <div className="mx-auto mt-20 flex max-w-screen-lg flex-col  items-center justify-center">
 
-                <ul className="mt-4 space-y-1 text-white">
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Crie formulários infinitos
-                  </li>
+          <div className="my-8 flex flex-col items-center justify-center gap-8 md:flex-row md:items-stretch">
+            <div className="w-full max-w-[18.75rem] rounded-lg border-[0.0938rem] bg-black p-4">
+              <h3 className="text-center text-[2rem] font-semibold uppercase leading-tight text-green-500">
+                SpotForm
+              </h3>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Disponibilidade de vitalício
-                  </li>
+              <ul className="mt-4 space-y-1 text-white">
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Crie formulários infinitos
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Atendimento personalizado
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Disponibilidade de vitalício
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Criador de landing page
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Atendimento personalizado
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Traqueamento individual
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Criador de landing page
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Personalize as cores e estilo
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Traqueamento individual
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Integração com a make
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Personalize as cores e estilo
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Exporte em Excel
-                  </li>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Integração com a make
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <CircleCheck className="size-5 fill-green-500 text-black" />
-                    Mais acessível do mercado
-                  </li>
-                </ul>
-              </div>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Exporte em Excel
+                </li>
 
-              <p className="self-center text-[2rem] font-semibold leading-tight text-black">
-                VS
-              </p>
+                <li className="flex items-center gap-1">
+                  <CircleCheck className="size-5 fill-green-500 text-black" />
+                  Mais acessível do mercado
+                </li>
+              </ul>
+            </div>
 
-              <div className="w-full max-w-[18.75rem] rounded-lg border-[0.0938rem] border-rose-500 p-4">
-                <h3 className="text-center text-[2rem] font-semibold uppercase leading-tight text-rose-500">
-                  Ferramenta <br /> Americana
-                </h3>
+            <p className="self-center text-[2rem] font-semibold leading-tight text-black">
+              VS
+            </p>
 
-                <ul className="mt-4 space-y-1 text-black">
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Não existe vitalício
-                  </li>
+            <div className="w-full max-w-[18.75rem] rounded-lg border-[0.0938rem] border-rose-500 p-4">
+              <h3 className="text-center text-[2rem] font-semibold uppercase leading-tight text-rose-500">
+                Ferramenta <br /> Americana
+              </h3>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Limite de uso ou pague +
-                  </li>
+              <ul className="mt-4 space-y-1 text-black">
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Não existe vitalício
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Integrações engessadas
-                  </li>
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Limite de uso ou pague +
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Suporte inacessível
-                  </li>
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Integrações engessadas
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Custos 5x mais! Pois pagamos em dólar
-                  </li>
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Suporte inacessível
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Poucas atualizações
-                  </li>
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Custos 5x mais! Pois pagamos em dólar
+                </li>
 
-                  <li className="flex items-center gap-1">
-                    <BadgeX className="size-5 text-rose-500" />
-                    Erros de traqueamento
-                  </li>
-                </ul>
-              </div>
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Poucas atualizações
+                </li>
+
+                <li className="flex items-center gap-1">
+                  <BadgeX className="size-5 text-rose-500" />
+                  Erros de traqueamento
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
       <section className=" flex flex-col justify-around items-center text-center h-[400px] text-white w-full bg-gradient-to-r to-[#F40F0F] from-[#1C4CC7] ">
         <div className="max-w-[800px] ">
           <h2 className={`${outfit.className} font-extrabold text-4xl`}>
@@ -442,17 +441,17 @@ export default function Home() {
         <p>revolucione o mercado conosco</p>
       </section>
       <section className="px-4 pb-20" id="subscription">
-          <div className="mx-auto mt-10 flex w-full  max-lg:flex-col  items-center justify-center pt-10">
-            <div className="p-4">
+        <div className="mx-auto mt-10 flex w-full  max-lg:flex-col  items-center justify-center pt-10">
+          <div className="p-4">
             <h2 className={`${outfit.className} text-left text-[2rem] font-semibold leading-tight text-black`}>
               Escolha um plano que faça{' '}
               <strong className="text-transparent bg-clip-text bg-gradient-to-l to-[#1881E2] from-[#1D0D7C]">sentido</strong> para você
             </h2>
             <p className="text-sm text-gray-500">
-            Assine  já e receba tudo que você deseja 5X mais barato do que o preço do mercado
+              Assine  já e receba tudo que você deseja 5X mais barato do que o preço do mercado
             </p>
-            </div>
-            <div className="flex gap-9 w-[90%] justify-center items-center max-md:flex-col">
+          </div>
+          <div className="flex gap-9 w-[90%] justify-center items-center max-md:flex-col">
             <motion.div
               className="flex w-full max-w-[21.875rem] flex-col items-center justify-center rounded-lg border-[0.0938rem] border-[#0E2282] p-4"
               initial={{
@@ -518,7 +517,7 @@ export default function Home() {
                 </li>
               </ul>
 
-             
+
 
               <div>
                 <p className="text-[2rem] font-semibold leading-tight text-transparent bg-clip-text bg-gradient-to-l to-[#1881E2] from-[#1D0D7C]">
@@ -609,7 +608,7 @@ export default function Home() {
                 </li>
               </ul>
 
-             
+
 
               <div>
                 <p className="text-[2rem] font-semibold leading-tight text-transparent bg-clip-text bg-gradient-to-l to-[#1881E2] from-[#1D0D7C]">
@@ -635,10 +634,10 @@ export default function Home() {
                 Adquira agora
               </motion.button>
             </motion.div>
-            </div>
-           
           </div>
-        </section>
+
+        </div>
+      </section>
     </main>
   );
 }
