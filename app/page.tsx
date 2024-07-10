@@ -17,15 +17,16 @@ const outfit = Outfit({ subsets: ['latin'] });
 export default function Home() {
 
   useEffect(() => {
-    const selector = document.getElementById("select");
-    const iframeForm = document.getElementById("formIframe");
+    const selector = document.getElementById("select") as HTMLSelectElement | null;
+    const iframeForm = document.getElementById("formIframe") as HTMLIFrameElement | null;
 
 
     if (selector && iframeForm) {
       selector.addEventListener("change", function () {
+        
         iframeForm.setAttribute(
           "src",
-          selector.value
+          `${selector.value}`
         );
       });
     }
