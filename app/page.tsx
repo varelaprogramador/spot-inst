@@ -25,7 +25,7 @@ export default function Home() {
       selector.addEventListener("change", function () {
         iframeForm.setAttribute(
           "src",
-          "https://www.spotform.com.br/form/clyfxaycy0002tokzsamlw91t"
+          selector.value
         );
       });
     }
